@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/snovvcrash/WeaponizeKali.sh/raw/main/1.png" alt="banner.png" />
+  <img src="https://user-images.githubusercontent.com/23141800/103461895-b2e52f80-4d32-11eb-9e4b-f35304ececfa.png" alt="banner.png" />
 </p>
 
 **WeaponizeKali.sh** is a Bash script aimed at automating the process of installing extra tools for internal penetration tests on Kali Linux.
@@ -22,13 +22,13 @@ In order to launch the bleeding-edge version of a tool installed with pipx and n
 2. Modify `PATH` for the superuser by modifying `secure_path` within sudoers (`sudo visudo`):
 
 <p align="center">
-  <img src="https://github.com/snovvcrash/WeaponizeKali.sh/raw/main/2.png" alt="sudoers.png" />
+  <img src="https://user-images.githubusercontent.com/23141800/103461896-b5e02000-4d32-11eb-936e-6764ceae1372.png" alt="sudoers.png" />
 </p>
 
 Now you can download WeaponizeKali.sh and run it from your home directory (pipenv may prompt for unlocking the keyring during the process). When it's done, you can check the results in `~/tools` and `~/www`:
 
 ```bash
-~$ curl -L https://github.com/snovvcrash/WeaponizeKali.sh/raw/main/WeaponizeKali.sh | bash - -idtw
+~$ curl -L https://github.com/snovvcrash/WeaponizeKali.sh/raw/main/WeaponizeKali.sh | bash -s -- -idtw
 ~$ ls -la ~/tools ~/www
 ```
 

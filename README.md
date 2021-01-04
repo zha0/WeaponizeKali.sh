@@ -2,7 +2,7 @@
   <img src="https://user-images.githubusercontent.com/23141800/103461895-b2e52f80-4d32-11eb-9e4b-f35304ececfa.png" alt="banner.png" />
 </p>
 
-**WeaponizeKali.sh** is a Bash script aimed at automating the process of installing extra tools for internal penetration tests on Kali Linux.
+**WeaponizeKali.sh** is a Bash script aimed at automating the process of downloading and installing extra tools for internal penetration tests on Kali Linux.
 
 Basic principles behind this project are:
 
@@ -10,7 +10,7 @@ Basic principles behind this project are:
 2. When installing 3rd party software, use isolated environments to minimize potential dependency hell.
 3. Keep Windows exploitation scripts and binaries on hand in case you find yourself in an "offline situation".
 
-The script will create two directories within CWD: `tools` and `www`. The [first](#tools) one contains all the tools that will be installed on Kali. The [second](#www) one contains all the tools that are supposed for transferring onto the victim host.
+The script will create two directories within CWD: `tools` and `www`. The [first](#tools) one contains all the tools that will be installed on Kali. The [second](#www) one contains all the scripts and binaries that may be transferred onto the victim host.
 
 # Usage
 
@@ -56,7 +56,7 @@ usage: WeaponizeKali.sh [-h] [-i] [-d] [-t] [w]
 
 optional arguments:
   -h                    show this help message and exit
-  -i                    initialize filesystem (re-creates ./tools and ./www directories)
+  -i                    initialize filesystem (re-create ./tools and ./www directories)
   -d                    resolve dependencies
   -t                    call "tools" module
   -w                    call "www" module

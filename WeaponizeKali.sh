@@ -40,23 +40,19 @@ filesystem() {
 # -----------------------------------------------------------------------------
 
 info() {
-	msg=$1
-	echo -e "${blue}[*] $msg" $nocolor
+	echo -e "${blue}[*] $1" $nocolor
 }
 
 success() {
-	msg=$1
-	echo -e "${green}[+] $msg" $nocolor
+	echo -e "${green}[+] $1" $nocolor
 }
 
 warning() {
-	msg=$1
-	echo -e "${yellow}[!] $msg" $nocolor
+	echo -e "${yellow}[!] $1" $nocolor
 }
 
 fail() {
-	msg=$1
-	echo -e "${red}[-] $msg" $nocolor
+	echo -e "${red}[-] $1" $nocolor
 }
 
 # -----------------------------------------------------------------------------
@@ -837,10 +833,10 @@ help() {
 	echo
 	echo "optional arguments:"
 	echo "  -h                    show this help message and exit"
-	echo "  -i                    initialize filesystem (re-creates ./tools and ./www directories)"
+	echo "  -i                    initialize filesystem (re-create ./tools and ./www directories)"
 	echo "  -d                    resolve dependencies"
-	echo "  -t                    call \"tools\" module"
-	echo "  -w                    call \"www\" module"
+	echo "  -t                    download and install tools on Kali Linux"
+	echo "  -w                    download scripts and binaries for transferring onto the victim host"
 }
 
 # -----------------------------------------------------------------------------
